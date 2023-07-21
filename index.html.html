@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+	<title>Score Grade Sheet</title>
+
+
+
+<style type="text/css">
+
+ div{
+  	font-family: algerian, sans-serif;
+  	background-color: #4686A8;
+  	color: white;
+
+
+  }
+
+img{
+	width: 60%;
+}
+.container{
+	border: 1px solid red;
+}
+
+.paddy{
+	padding: 2px;
+}
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+        <div class="container mt-2 mb-2">
+        	<div class="row mt-4" >
+        		  <div class="col-2 mx-3" ><h4>SUBJECT</h4></div>
+        		  <div class="col-3"><h4>SCORE</h4></div>
+        		  <div class="col-2 mx-5"><h4>GRADE</h4></div>
+
+        	</div>
+
+        	<div class="row mt-3">
+        		  <div class="col-2 mx-3"><h5>English</h5></div>
+        		  <div class="col-3 paddy" ><input type="number" id="eng1" class="form-control" onchange="scoreSheet(this.value, 'eng2')"></div>
+        		  <div class="col-2 mx-5"><p id="eng2"></p></div>
+        	</div>
+
+        	<div class="row mt-3">
+        		  <div class="col-2 mx-3"><h5>Maths</h5></div>
+        		  <div class="col-3 paddy"><input type="number" id="mat1" class="form-control"  onchange="scoreSheet(this.value, 'mat2')"></div>
+        		  <div class="col-2 mx-5" id="mat2"><p></p></div>
+           </div>
+
+           	<div class="row mt-3">
+        		  <div class="col-2 mx-3 "><h5>Chemistry</h5></div>
+        		  <div class="col-3 paddy"><input type="number" id="chem1" class="form-control"  onchange="scoreSheet(this.value, 'chem2')"></div>
+        		  <div class="col-2 mx-5" id="chem2"><p></p></div>
+           </div>
+
+           	<div class="row mt-3">
+        		  <div class="col-2 mx-3"><h5>Biology</h5></div>
+        		  <div class="col-3 paddy"><input type="number" id="bio1" class="form-control" onchange="scoreSheet(this.value, 'bio2')"></div>
+        		  <div class="col-2 mx-5" id="bio2"><p></p></div>
+           </div>
+
+           	<div class="row mt-3">
+        		  <div class="col-2 mx-3"><h5>French</h5></div>
+        		  <div class="col-3 paddy"><input type="number" id="fren1" class="form-control"  onchange="scoreSheet(this.value, 'fren2')"></div>
+        		  <div class="col-2 mx-5" id="fren2"><p></p></div>
+           </div>
+
+           	
+        	<div><button class="btn btn-primary mt-3 mx-3" onclick="total()">Get Result</button></div>
+
+
+           	<div class="row mt-3">
+        		  <div class="col-2 mx-3"><h5>TOTAL</h5></div>
+        		  <div class="col-3" id="tot"><p></p></div>
+        		  <div class="col-2"> <img id="img1"> </div>
+        		          		  
+        		
+           </div>
+
+            <div class="row mt-3">
+        		  <div class="col-2 mx-3"><h5>Average</h5></div>
+        		  <div class="col-3" id="aver"><p></p></div>
+           </div>
+
+            <div class="row mt-3">
+        		  <div class="col-2 mb-5 mx-3"><h5>Remark</h5></div>
+        		  <div class="col-4" id="rem"><p></p></div>
+            </div>
+
+           
+           
+<script type="text/javascript" src="js/script1.js"></script>
+
+
+
+
+</body>
+</html>
